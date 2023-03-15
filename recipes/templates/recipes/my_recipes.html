@@ -1,0 +1,41 @@
+{% extends 'recipes/base.html' %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'recipes/style.css' %}">
+
+{% block content %}
+    <div class="container-fluid">
+        <h2>My Recipes</h2>
+        <table class="table" style="width: 50%;">
+            <thead>
+            <tr>
+                <th>title</th>
+                <th>date created</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for recipe in recipes %}
+                <tr>
+                    <td>{{ recipe.title }}</td>
+                    <td>{{ recipe.post_date }}</td>
+                    <td></td>
+                    <td><a class="btn btn-sm" href="{% url 'recipes:recipe_page' recipe.id %}">View</a></td>
+                    <td><a class="btn btn-sm" href="{% url 'recipes:edit_recipe' recipe.id %}">Edit</a></td>
+                    <td><a class="btn btn-sm" href="{% url 'recipes:delete_recipe' recipe.id %}">Delete</a></td>
+                </tr>
+                </tbody>
+            {% empty %}
+                <h3>You haven't posted any recipe yet.</h3>
+            {% endfor %}
+        </table>
+
+        <div class="container">
+            <a class="btn flex-end" href="{% url 'recipes:new_recipe' %}"> Upload New Recipe</a>
+            <a class="btn flex-end" href="{% url 'recipes:index' %}"> Return Home</a>
+        </div>
+    </div>
+{% endblock %}

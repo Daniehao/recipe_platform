@@ -1,0 +1,17 @@
+{% extends "recipes/base.html" %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+
+{% block content %}
+    <h2 class="p-3 text-center">Edit Your Recipe</h2>
+    <div class="container" style="width: 50%;">
+        <form action="{% url 'recipes:edit_recipe' recipe.id %}" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                {% csrf_token %}
+                <input id="creator" type="hidden" name="creator" value="{{ user.username }}"/>
+                {% bootstrap_form form exclude="creator" %}
+            </div>
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+    </div>
+{% endblock content %}

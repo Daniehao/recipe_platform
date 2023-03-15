@@ -1,0 +1,16 @@
+{% extends "recipes/base.html" %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+
+{% block content %}
+    <h2 class="p-3 text-center">User Login</h2>
+
+    <div class="container" style="width: 50%;">
+        <form action="{% url 'users:login' %}" method="post">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            <button type="submit" class="btn btn-primary">Log in</button>
+            <input type="hidden" name="next" value="{% url 'recipes:index' %}"/>
+        </form>
+    </div>
+{% endblock content %}

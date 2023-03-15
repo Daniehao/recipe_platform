@@ -1,0 +1,34 @@
+{% extends "recipes/base.html" %}
+
+{% block content %}
+    <div class="container-fluid">
+        <h1>Foodie </h1>
+        <h4>Make delicious food by yourself in a fast and easy way!</h4>
+        <h5> {{ users_count }} users have uploaded their own recipe. {{ recipes_count }} recipes have been
+            uploaded.</h5>
+        <br>
+
+        {% load bootstrap5 %}
+        {% bootstrap_css %}
+
+        <div class="row row-cols-md-5 g-4">
+            {% for recipe in recipes %}
+                <div class="col">
+                    <div class="card mb-5">
+                        <img class="card-img-top" src="{{ recipe.photo_1.url }}" width=200px height=350px alt="connect">
+                        <div class="card-body text-center">
+                            <h4 class="card-title"> {{ recipe.title }}</h4>
+                            <p class="card-text"><b>Creator:</b> {{ recipe.creator }}</p>
+                            <p class="card-text"><b>Cuisine:</b> {{ recipe.dish_type }}</p>
+                            <p class="card-text"><b>Difficulty:</b> {{ recipe.difficulty }}</p>
+                            <a type="button" class="btn btn-outline-primary"
+                               href="{% url 'recipes:recipe_page' recipe.id %}">View this recipe</a>
+                        </div>
+                    </div>
+                </div>
+            {% empty %}
+                <h3>No Recipe found. Try again.</h3>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}
