@@ -14,7 +14,7 @@ Our web users can simply input the recipe keyword and click the "Search" button 
 
 ![image](https://user-images.githubusercontent.com/31623888/226204235-fab2516e-50ca-43cb-a0ec-a96b8cd88cb4.png)
 
-Click the "register" button to create a new account or click the "login" button to log into your account.
+Click the "register" button to create a new account or click the "login" button to log into your account. After logging into your account, you are free to use the following functions now.
 
 #### Upload your recipe
 ![image](https://user-images.githubusercontent.com/31623888/226201062-92584f7d-9468-47a8-8526-ada7fd5b7826.png)
@@ -29,10 +29,10 @@ Clicking "My recipes" button, you will see a table that list the brief informati
 #### Log out
 Feel free to log out your account by clicking the logout button on the navigator bar.
 
-### Unit Tests
+#### Unit Tests
 I've added unit tests for both recipes app and users app under the tests folder.
 
-### Integration Test
+#### Integration Test
 ![image](https://user-images.githubusercontent.com/31623888/226202500-466b6456-9aab-4c0e-9c45-7b6e53d80357.png)
 
 ### Future steps
