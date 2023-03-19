@@ -1,15 +1,19 @@
-# Recipe App
+# The Recipe App
 
 ### Introduction
 ![image](https://user-images.githubusercontent.com/31623888/226194939-7b2bc815-02ce-4ad4-b77e-396e23713403.png)
 
-This recipe web application enables users to view recipes, search recipes by keyword, upload their recipes, edit/view/delete their uploaded recipes. A registered user is required for uploading and modifying recipes. Search recipe function can be used without registration. The screenshot is how the website looks like.
+This recipe web application is based on Django framework. The backend is built by Python, and the frontend pages are built by html. This app enables users to view recipes, search recipes by keyword, upload their recipes, edit/view/delete of their uploaded recipes. A registered user is required for uploading and modifying recipes. Search recipe function can be used without registration. The attached screenshot is how the website looks like. It can support main demandings from our potential users. Though I've set up some settings on Heroku, I didn't deploy it to a remote server in the end because it's not free any more even if it's for a personal project.
 
 ### Follow the steps to go through all functions
 #### Search for a recipe
 Our web users can simply input the recipe keyword and click the "Search" button to search for a recipe. If the keyword doesn't match to an existing recipe, then the page will return "recipe not found". 
 
 #### Register and Login
+![image](https://user-images.githubusercontent.com/31623888/226204203-a70f4199-ee54-4c85-a9f5-92126cf8b838.png)
+
+![image](https://user-images.githubusercontent.com/31623888/226204235-fab2516e-50ca-43cb-a0ec-a96b8cd88cb4.png)
+
 Click the "register" button to create a new account or click the "login" button to log into your account.
 
 #### Upload your recipe
@@ -30,4 +34,7 @@ I've added unit tests for both recipes app and users app under the tests folder.
 
 ### Integration Test
 ![image](https://user-images.githubusercontent.com/31623888/226202500-466b6456-9aab-4c0e-9c45-7b6e53d80357.png)
+
+### Future steps
+I would like to apply AWS rather than the Django default database to store more data. I also hope to deploy this app to a remote server so that it can be used by the public.
 
