@@ -44,6 +44,12 @@ I would like to apply AWS rather than the Django default database to store more 
 ### References
 https://docs.djangoproject.com/en/4.1/            
 https://blog.getbootstrap.com/2021/05/05/bootstrap-5/        
+https://stackoverflow.com/questions/15128135/setting-debug-false-causes-500-error         
+https://docs.djangoproject.com/en/1.11/ref/settings/#logout-redirect-url       
+https://docs.djangoproject.com/en/dev/topics/auth/default/#django.contrib.auth.views.logout        
+https://stackoverflow.com/questions/62207888/django-only-some-static-images-not-showing-up-on-web-page-after-deployment    
+https://stackoverflow.com/questions/71292162/how-to-test-registration-form-in-django              
+https://stackoverflow.com/questions/35411206/coverage-test-django-logout    
 https://www.educative.io/courses/django-takeoff-develop-modern-apps     
 https://www.modernhoney.com/chinese-orange-chicken/       
 https://tastesbetterfromscratch.com/easy-tiramisu/       
