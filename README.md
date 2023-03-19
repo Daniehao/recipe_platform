@@ -42,11 +42,11 @@ The integeration test was generated at recipe_platform/htmlcov/index.html
 I would like to apply AWS rather than the Django default database to store more data. I also hope to deploy this app to a remote server so that it can be used by the public.
 
 ### References
-https://docs.djangoproject.com/en/4.1/
-https://blog.getbootstrap.com/2021/05/05/bootstrap-5/
-https://www.educative.io/courses/django-takeoff-develop-modern-apps
-https://www.modernhoney.com/chinese-orange-chicken/
-https://tastesbetterfromscratch.com/easy-tiramisu/
-https://www.eatwell101.com/garlic-butter-steak-and-potatoes-recipe
-https://www.thewholesomedish.com/the-best-homemade-tacos/
+https://docs.djangoproject.com/en/4.1/. 
+https://blog.getbootstrap.com/2021/05/05/bootstrap-5/. 
+https://www.educative.io/courses/django-takeoff-develop-modern-apps. 
+https://www.modernhoney.com/chinese-orange-chicken/. 
+https://tastesbetterfromscratch.com/easy-tiramisu/. 
+https://www.eatwell101.com/garlic-butter-steak-and-potatoes-recipe. 
+https://www.thewholesomedish.com/the-best-homemade-tacos/. 
 
