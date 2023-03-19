@@ -3,7 +3,7 @@
 ### Introduction
 ![image](https://user-images.githubusercontent.com/31623888/226194939-7b2bc815-02ce-4ad4-b77e-396e23713403.png)
 
-This recipe web application is based on Django framework. The backend is built by Python, and the frontend pages are built by html. This app enables users to view recipes, search recipes by keyword, upload their recipes, edit/view/delete of their uploaded recipes. A registered user is required for uploading and modifying recipes. Search recipe function can be used without registration. The attached screenshot is how the website looks like. It can support main demandings from our potential users. Though I've set up some settings on Heroku, I didn't deploy it to a remote server in the end because it's not free any more even if it's for a personal project.
+This recipe web application is based on Django framework, and which includes two apps: users app and recipes app. The backend is built by Python, and the frontend pages are built by html. This app enables users to view recipes, search recipes by keyword, upload their recipes, edit/view/delete of their uploaded recipes. A registered user is required for uploading and modifying recipes. Search recipe function can be used without registration. The attached screenshot is how the website looks like. It can support main demandings from our potential users. Though I've set up some settings on Heroku, I didn't deploy it to a remote server in the end because it's not free any more even if it's for a personal project.
 
 ### Follow the steps to go through all functions
 #### Search for a recipe
